@@ -109,6 +109,8 @@ enable_dav1d_decoder=true
 include_both_v8_snapshots = false
 include_both_v8_snapshots_android_secondary_abi = false
 generate_linker_map = true
+enable_webauthn = true
+enable_fido_authenticator = true
 EOF
 gn gen out/Default # gn args out/Default; echo 'treat_warnings_as_errors = false' >> out/Default/args.gn
 autoninja -C out/Default chrome_public_apk
